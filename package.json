@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "dev": "./node_modules/.bin/ts-node main.ts"
+  },
+  "name": "air-sensor",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "repository": "https://github.com/Sai-Tom/AirSensor.git",
+  "author": "Sai-Tom <https://github.com/Sai-Tom>",
+  "license": "Sai-Tom",
+  "dependencies": {
+    "@types/serialport": "^8.0.5",
+    "serialport": "^12.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
