@@ -52,17 +52,13 @@ export default class Sensor {
     return portPath;
   }
 
-  public getRoomCondition(): RoomCondition {
-    return this.roomConditon;
-  }
-
   async run(send: (data: RoomCondition) => void) {
     await new Promise((resolve) => {
       setTimeout(resolve, 5000);
     });
 
     while (true) {
-      send(this.getRoomCondition())
+      send(this.roomConditon)
       await new Promise((resolve) => {
         setTimeout(resolve, 1000);
       });
