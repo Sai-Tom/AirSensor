@@ -50,7 +50,7 @@ const main = async () => {
       return;
     }
 
-    console.log(`co2: ${data.co2?.toFixed(0)} , temperature: ${data.temperature?.toFixed(1)} , humidity: ${data.humidity?.toFixed(1)} , pressure: ${data.pressure?.toFixed(1)}`);
+    console.log(`time: ${new Date().toLocaleTimeString()} , co2: ${data.co2?.toFixed(0)} , temperature: ${data.temperature?.toFixed(1)} , humidity: ${data.humidity?.toFixed(1)} , pressure: ${data.pressure?.toFixed(1)}`);
   });
 };
 

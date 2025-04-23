@@ -60,7 +60,7 @@ export default class Sensor {
     while (true) {
       send(this.roomConditon)
       await new Promise((resolve) => {
-        setTimeout(resolve, 1000);
+        setTimeout(resolve, 500);
       });
     }
   }
